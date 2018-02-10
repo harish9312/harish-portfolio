@@ -1,0 +1,160 @@
+    body {
+        background-image: url('./bg.png')
+    }
+
+    .main-cont {
+        width: 700px;
+    }
+
+    @font-face {
+        font-family: myName;
+        src: url(RhodiumLibre.ttf);
+    }
+
+    @font-face {
+        font-family: myProfile;
+        src: url(ROCK.TTF);
+    }
+
+    @font-face {
+        font-family: myQuote;
+        src: url(SailRegular.otf);
+    }
+
+    @font-face {
+        font-family: work;
+        src: url(RosarioRegular.otf);
+    }
+
+    .row {
+        background-color: white;
+    }
+
+    .my-name {
+        font-size: 35px;
+        color: #333333;
+        font-family: myNam;
+    }
+
+    .underline {
+        border: 1px solid;
+        width: 145px;
+        color: #8c8c8c;
+    }
+
+    .work {
+        font-size: 20px;
+        text-align: left;
+        padding: 0px 29px 0px;
+        font-family: work;
+    }
+
+    .projects {
+        padding: 0px 29px 30px;
+    }
+
+    .project1 {
+        text-align: center;
+        margin: 0 30px;
+        height: 150px;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 1), 0 3px 3px rgba(0, 0, 0, 0.23);
+    }
+
+    .project1:hover {
+        cursor: pointer;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 1), 0 3px 25px rgba(0, 0, 0, 0.23);
+    }
+
+    .projects-container {
+        font-family: work;
+        font-size: 20px;
+        text-align: left;
+        padding: 20px 0px;
+    }
+
+    .exp {
+        font-size: 17px;
+        padding: 15px;
+    }
+
+    .my-quote {
+        font-family: myQuote;
+        padding: 20px 50px;
+        font-size: 19px
+    }
+
+    .profile {
+        color: #888888;
+        font-family: myProfile;
+        font-size: 18px;
+        margin: -5px
+    }
+
+    .footer-container {
+        padding-bottom: 50px;
+        font-family: work;
+    }
+
+    .resume-container {
+        margin: 20px 60px;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 1), 0 3px 3px rgba(0, 0, 0, 0.23);
+        padding: 30px;
+        text-align: center;
+    }
+
+    .resume-container:hover {
+        cursor: pointer;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 1), 0 3px 25px rgba(0, 0, 0, 0.23);
+    }
+
+    .App {
+        padding: 100px 50px;
+        text-align: center;
+    }
+
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+        height: 80px;
+    }
+
+    .App-header {
+        background-color: #222;
+        height: 150px;
+        padding: 20px;
+        color: white;
+    }
+
+    .App-title {
+        font-size: 1.5em;
+    }
+
+    .App-intro {
+        font-size: large;
+    }
+
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .main-cont {
+            width: 100%;
+        }
+        .project1 {
+            margin: 0;
+        }
+        .my-quote{
+            padding: 0 20px;
+        }
+        .card-container {
+            padding: 0 20px;
+        }
+        .project-2 {
+            margin-top: 30px;
+        }
+    }
