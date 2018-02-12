@@ -4,6 +4,7 @@ const resumeImg = require('./resume.png');
 const gmailIcon = require('./gmail.png');
 const linkedInIco = require('./linkedIn.png');
 const phoneIco = require('./phone.png');
+const gitLogo = require('./gitLogo.png');
 
 export interface IFooterProps {
 }
@@ -21,9 +22,17 @@ export class Footer extends React.Component<IFooterProps, {}> {
                         Resume:
                     </span>
                     <div style={{ marginLeft: '20px', width: '75px' }} className="underline" />
-                    <div className="resume-container">
-                        <img src={resumeImg} />
-                    </div>
+                    <a
+                        href={
+                            'https://docs.google.com/document/d/' +
+                            '1IEQwyr2_Q_Mx6ZOB5Sm_GpVU6cc8c8mpf2xgtN1oJPQ/edit?usp=sharingF'
+                        }
+                        target="_blank"
+                    >
+                        <div className="resume-container">
+                            <img className="resume" src={resumeImg} />
+                        </div>
+                    </a>
                 </Col>
                 <Col sm={6} xs={12}>
                     <span style={{ fontSize: '20px', paddingLeft: '20px' }}>
@@ -39,6 +48,16 @@ export class Footer extends React.Component<IFooterProps, {}> {
                         <img height="27px" src={gmailIcon} />
                         &nbsp;
                         <a href="mail:hksoni.9312@gmail.com">hksoni.9312@gmail.com</a>
+                    </div>
+                    <div style={{ margin: '20px 20px 0px' }}>
+                        <img height="27px" src={gitLogo} />
+                        &nbsp;
+                        <a
+                            href="https://www.github.com/harish9312"
+                            target="_blank"
+                        >
+                            Git Hub
+                        </a>
                     </div>
                     <div style={{ margin: '20px 20px 0px' }}>
                         <img height="27px" src={linkedInIco} />
